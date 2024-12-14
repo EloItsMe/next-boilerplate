@@ -1,6 +1,6 @@
-name: Production (Pull Request)
+name: Production (Release)
 on:
-  pull_request:
+  push:
     branches:
       - main
 

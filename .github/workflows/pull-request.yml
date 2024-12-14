@@ -1,8 +1,5 @@
-name: Production (Push)
-on:
-  push:
-    branches:
-      - main
+name: Pull Request
+on: [pull_request]
 
 env:
   NEXT_TELEMETRY_DISABLED: 1
