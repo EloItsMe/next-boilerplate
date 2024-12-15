@@ -10,11 +10,20 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends(
-    "next/core-web-vitals",
-    "next/typescript",
-    "plugin:tailwindcss/recommended"
-  ),
+  ...compat.config({
+    extends: [
+      "next",
+      "plugin:tailwindcss/recommended",
+      "plugin:storybook/recommended",
+      "prettier",
+    ],
+    rules: {
+      "prefer-arrow-callback": "error",
+      "prefer-template": "error",
+      semi: "error",
+      quotes: ["error", "double"],
+    },
+  }),
 ];
 
 export default eslintConfig;

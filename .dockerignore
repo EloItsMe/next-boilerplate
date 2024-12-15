@@ -1,7 +1,11 @@
 Dockerfile
 .dockerignore
+docker-data
 node_modules
 npm-debug.log
 README.md
 .next
 .git
+.github
+.vscode
+docker-compose.prod.yml
