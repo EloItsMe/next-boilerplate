@@ -13,8 +13,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "db:migrate": "prisma migrate dev",
-    "db:seed": "npx tsx db/seed.ts",
-    "prepare": "husky"
+    "db:seed": "npx tsx db/seed.ts"
   },
   "prisma": {
     "schema": "db/schema.prisma"
