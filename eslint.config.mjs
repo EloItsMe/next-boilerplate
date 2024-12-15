@@ -11,7 +11,12 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.config({
-    extends: ["next", "plugin:tailwindcss/recommended", "prettier"],
+    extends: [
+      "next",
+      "plugin:tailwindcss/recommended",
+      "plugin:storybook/recommended",
+      "prettier",
+    ],
     rules: {
       "prefer-arrow-callback": "error",
       "prefer-template": "error",
