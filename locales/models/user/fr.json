@@ -1,0 +1,7 @@
+{
+  "models": {
+    "user": {
+      "name": "Nom"
+    }
+  }
+}
